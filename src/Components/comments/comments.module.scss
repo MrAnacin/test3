@@ -1,0 +1,78 @@
+.commentBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  min-width: 300px;
+  height: 100vh;
+  background: #f6f6f6;
+  border-radius: 20px 0 0 20px;
+  overflow: auto;
+
+  @media (max-width: 500px) {
+    padding-top: 30px;
+  }
+
+  &_content {
+    margin-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+    h3 {
+      margin: 0;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+  }
+}
+
+.loaderActive {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  background: #f6f6f6;
+  border-radius: 20px 0 0 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  margin-left: 20px;
+  margin-top: 20px;
+  scale: 1.7;
+  color: #acacac;
+
+  transition: all 0.1s ease-in-out;
+
+  @media (max-width: 500px) {
+    margin-left: 90%;
+    scale: 2;
+  }
+}
+
+@keyframes l7 {
+  100% {
+    width: 20px;
+    margin-left: 60px;
+  }
+}

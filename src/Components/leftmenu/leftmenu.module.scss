@@ -1,0 +1,115 @@
+.leftMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15%;
+  height: 100vh;
+  border-radius: 20px 0 0 20px;
+}
+
+.burgerBlock {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 50px;
+  margin-left: 20px;
+  padding-top: 10px;
+  top: 15px;
+
+  &_svg {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    scale: 1.5;
+  }
+
+  @media (max-width: 580px) {
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 15%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+
+  @media (max-width: 1380px) {
+    width: 18%;
+  }
+
+  @media (max-width: 1180px) {
+    width: 20%;
+  }
+  @media (max-width: 1040px) {
+    width: 22%;
+  }
+
+  @media (max-width: 930px) {
+    width: 30%;
+  }
+
+  @media (max-width: 700px) {
+    width: 40%;
+  }
+  @media (max-width: 580px) {
+    width: 300px;
+  }
+
+  &_content {
+    margin-top: 100px;
+
+    img {
+      margin-left: 15%;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    h3,
+    h4 {
+      text-align: center;
+      color: #000000;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  &_nav {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 22px;
+      color: #737373;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-2px);
+        scale: 1.02;
+      }
+      &:active {
+        transform: translateY(2px);
+        scale: 0.95;
+      }
+    }
+  }
+}

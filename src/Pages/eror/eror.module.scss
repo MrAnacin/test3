@@ -1,0 +1,40 @@
+.root_content {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_Box {
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 80px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+
+    button {
+      background: #cccccc;
+      width: 100px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background: darken($color: #e1e1e1, $amount: 10%);
+        transform: translateY(-2px);
+      }
+      &:active {
+        background: darken($color: #e1e1e1, $amount: 20%);
+        transform: translateY(0px);
+
+      }
+    }
+  }
+}

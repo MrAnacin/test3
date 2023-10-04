@@ -1,0 +1,128 @@
+.root_content {
+  position: absolute;
+  top: 20px;
+  left: 17%;
+  width: 83%;
+  margin-right: 17%;
+
+  @media (max-width: 520px) {
+    left: 10%;
+  }
+}
+
+.infoBlock {
+  background-color: #ececec;
+  width: 15%;
+  min-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+
+  @media (max-width: 550px) {
+    width: 90%;
+  }
+  @media (max-width: 520px) {
+    margin-top: 70px;
+  }
+}
+
+.postsBlock {
+  position: absolute;
+  width: 100%;
+
+  h2 {
+    text-align: left;
+  }
+}
+
+.postsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-right: 15px;
+
+  @media (max-width: 1550px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  @media (max-width: 1370px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 930px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.postCardLoader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.buttonBack {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 5px;
+  background: white;
+  border-radius: 3px;
+
+  button {
+    cursor: pointer;
+
+    border: none;
+    background: transparent;
+  }
+
+  .icon {
+    transform: all 0.5s ease-in-out;
+    color: #000000;
+  }
+
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}

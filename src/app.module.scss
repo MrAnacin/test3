@@ -1,0 +1,13 @@
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background: #307239;
+  background: -webkit-linear-gradient(to right, #decba4, #3e5151);
+  background: linear-gradient(to right, #677252, #b2cf61);
+}
