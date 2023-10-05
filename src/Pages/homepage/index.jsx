@@ -6,10 +6,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import Comments from '../../Components/comments';
 import Pagination from '../../Components/pagination';
 
-const Home = () => {
+const HomePage = () => {
   const navigate = useNavigate();
   const [showComments, setShowComments] = React.useState(false);
-  const [loading, setLoading] = React.useState(false); //для задержки лоадера
+  const [loading, setLoading] = React.useState(false);
   const dataLimit = 9;
   const [page, setPage] = React.useState(1);
   const [idPost, setIdPost] = React.useState(null);
@@ -53,12 +53,12 @@ const Home = () => {
             <Link to="user">
               <img
                 onClick={() => sessionStorage.setItem('userId', post.userId)}
-                src="img/face.jpg"
+                src="img/myfoto.jpg"
                 alt="Фото"
               />
             </Link>
             <button onClick={() => showCommentsBlock(post.id)}>
-              Посмотреть <br /> комментарии
+              Комментарии
             </button>
             <div className={S.contentBox}>
               <h2>{post.title}</h2>
@@ -74,4 +74,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

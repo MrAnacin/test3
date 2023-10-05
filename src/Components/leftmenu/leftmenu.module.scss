@@ -10,7 +10,7 @@
 .burgerBlock {
   position: fixed;
   z-index: 1000;
-  background-color: white;
+  background-color: #181a1b;
   border-radius: 50%;
   width: 60px;
   height: 50px;
@@ -23,6 +23,7 @@
     top: 22px;
     left: 22px;
     scale: 1.5;
+    color: white;
   }
 
   @media (max-width: 580px) {
@@ -34,7 +35,8 @@
 .menu {
   position: fixed;
   top: 0;
-  background-color: white;
+  background-color: #181a1b;
+  color: white;
   width: 15%;
   height: 100%;
   border-radius: 0 10px 10px 0;
@@ -77,7 +79,7 @@
     h3,
     h4 {
       text-align: center;
-      color: #000000;
+      color: white;
     }
 
     p {
@@ -98,7 +100,7 @@
       cursor: pointer;
       font-weight: 400;
       font-size: 22px;
-      color: #737373;
+      color: white;
       text-decoration: none;
       transition: 0.2s;
 

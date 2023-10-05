@@ -1,6 +1,6 @@
 .postCard {
   position: relative;
-  background-color: white;
+  background-color: #181a1b;
   display: flex;
   padding: 12px;
   border-radius: 4px;
@@ -14,7 +14,8 @@
     height: 50px;
     margin-left: 15px;
     margin-top: 150px;
-    background: #e1e1e1;
+    background: #2a2c2e;
+    color: white;
     border-radius: 4px;
     padding: 6px;
     border: none;
@@ -32,6 +33,7 @@
 }
 .contentBox {
   margin-left: 30px;
+  color: white;
 
   h2 {
     font-size: 17px;

@@ -43,9 +43,6 @@ const BurgerMenu = () => {
             <h2>Кондрияненко Ярослав</h2>
             <h3>Программист на Python и Rust</h3>
             <h3>По всем вопросам:</h3>
-            <a href="t.me/mranacin" target="_blank" rel="noopener noreferrer">
-              <button className='button'>**тык**</button>
-            </a>
           </div>
           <div className={S.menu_nav}>
             <Link to={'about'} onClick={() => setCloseBtn(false)}>

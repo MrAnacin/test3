@@ -32,7 +32,7 @@ const PostCard = (params) => {
           exit={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           className={S.postCard}>
-          <img src="img/face.jpg" alt="" />
+          <img src="img/myfoto.jpg" alt="" />
 
           <button onClick={() => showCommentsBlock(el.id)}>
             Комментарии
